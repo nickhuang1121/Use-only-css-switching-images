@@ -1,0 +1,48 @@
+ article {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     width: 90%;
+     max-width: 800px;
+ }
+
+ input[type=radio] {
+     display: none;
+ }
+
+ input[type=radio]+label {
+     display: inline-block;
+     width: 25%;
+     height: auto;
+ }
+
+ input[type=radio]+label img {
+     width: 100%;
+ }
+
+ input[type=radio]:nth-of-type(1):checked~div span:nth-of-type(1) img {
+     display: block;
+
+ }
+
+ input[type=radio]:nth-of-type(2):checked~div span:nth-of-type(2) img {
+     display: block;
+ }
+
+
+ input[type=radio]:nth-of-type(3):checked~div span:nth-of-type(3) img {
+     display: block;
+ }
+
+ input[type=radio]:nth-of-type(4):checked~div span:nth-of-type(4) img {
+     display: block;
+ }
+
+ div {
+     width: 100%;
+ }
+
+ div img {
+     display: none;
+     width: 100%;
+ }
